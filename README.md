@@ -1,1 +1,2 @@
-# MetodyDlaStringa
+# Bootstrap
+just bootstarp
