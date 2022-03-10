@@ -53,6 +53,7 @@ parameter.addEventListener('keydown', wyswietlWartosc);
 
 window.onload = function() {
      wykonajZmiane();
+     wykonajZmiane();
 }
 
 
