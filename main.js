@@ -43,7 +43,7 @@ const output = document.querySelector("#userOutput");
 const code = document.querySelector("#userCode");
 
 
-const wybor = document.querySelectorAll("select");
+const wybor = document.querySelector("select");
 wybor.addEventListener('change', wykonajZmiane);
 
 
