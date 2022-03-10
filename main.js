@@ -57,6 +57,7 @@ window.onload = function() {
 
 
 function wykonajZmiane() {
+    console.log("test");
     const wybor = parseInt(wybory[0].parentElement.selectedIndex);
     menedzer.zmienIndex(wybor);
 
