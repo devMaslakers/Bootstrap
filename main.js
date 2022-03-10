@@ -43,16 +43,14 @@ const output = document.querySelector("#userOutput");
 const code = document.querySelector("#userCode");
 
 
-const wybory = document.querySelectorAll("select > option");
-wybory.forEach( wybor => {
-    wybor.addEventListener('click', wykonajZmiane);
-})
+const wybor = document.querySelectorAll("select");
+wybor.addEventListener('change', wykonajZmiane);
+
 
 input.addEventListener('keydown', wyswietlWartosc);
 parameter.addEventListener('keydown', wyswietlWartosc);
 
 window.onload = function() {
-     wykonajZmiane();
      wykonajZmiane();
 }
 
