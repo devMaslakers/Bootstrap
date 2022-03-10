@@ -56,14 +56,13 @@ window.onload = function() {
 
 
 function wykonajZmiane() {
-    console.log("test");
-    const wybor = parseInt(wybory[0].parentElement.selectedIndex);
-    menedzer.zmienIndex(wybor);
+    const newWybor = wybor.selectedIndex; 
+    menedzer.zmienIndex(newWybor);
 
-    const codeText = tablicaOpisow[wybor].split('/')[0];
-    const infoText = tablicaOpisow[wybor].split('/')[1];
+    const codeText = tablicaOpisow[newWybor].split('/')[0];
+    const infoText = tablicaOpisow[newWybor].split('/')[1];
 
-    switch(wybor) {
+    switch(newWybor) {
         case 0:
         case 3:
         case 4:
@@ -83,7 +82,7 @@ function wyswietlWartosc() {
         const parameterText = parameter.value;
 
         const textZwrotny = wytworzTekst(inputText, parameterText);
-        
+
         output.value = textZwrotny;
 
     },10);
